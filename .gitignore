@@ -132,3 +132,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+Pool_Table/*
+!/Pool_Table/cut_textured_pool_modelisation_yliess.blend
+!/Pool_Table/red_ball.blend
+!/Pool_Table/yellow_ball.blend
