@@ -29,4 +29,9 @@ The loss function is the L1.
 The training is done on 7500 images and the validation on 2 500 images.
 The training is done on 30 epochs with a batch size of 256.
 
+## Results
 
+
+## Documentation
+
+All the project is explained on the [project_report.pdf](project_report.pdf) file.
