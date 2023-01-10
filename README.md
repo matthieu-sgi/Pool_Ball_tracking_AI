@@ -5,7 +5,7 @@
 The dataset generation is done using Blender opensource software.
 The modelisation and the generation are handle in the [final_modelisation_w_script.blend](Pool_Table/final_modelisation_w_script.blend) file. This modelisation is done without using HDR lights.
 
-A new version with HDR lights is available in the [final_modelisation_w_script_HDR.blend](Pool_Table/final_modelisation_w_script_HDR.blend) file. This has be done by Martin PUJOL, UROP student at the DVIC.
+A new version with HDR lights is available in the [final_modelisation_w_script_HDR.blend](Pool_Table/final_modelisation_w_script_HDR.blend) file. This has be done by Martin PUJOL ([@lapujpuj](https://github.com/lapujpuj)), UROP student at the DVIC.
 
 The dataset is composed of 10 000 pictures of randomly generated images.
 
