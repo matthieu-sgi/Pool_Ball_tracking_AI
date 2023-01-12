@@ -64,9 +64,12 @@ Model Weight : 246.06 MB with 31,037,633 parameters.
 #### Conclusion on U-Net
 
 The V1 is working but not in real-time.
-The V
+The V1 is light enough on a desk computer.
 
 ### RESNET
+A ResNet is a similar to a convolutional network but it also includes residual layers. This means that it includes the result a previous layer. This allows to avoir gradient vanishing or exploding.
+The code of the ResNet is [here](resnet_version/Ball_tracking_resnet18.ipynb).
+
 ## Documentation
 
 All the project is explained on the [project_report.pdf](project_report.pdf) file.
