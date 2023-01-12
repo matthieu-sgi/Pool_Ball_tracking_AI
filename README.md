@@ -9,6 +9,8 @@ A new version with HDR lights is available in the [final_modelisation_w_script_H
 
 The dataset is composed of 10 000 pictures of randomly generated images.
 
+The training have been done on Google Colab which raises some problems. The limitations on Cuda Cores refrain the training and then the validation of models.
+
 ## Artificial Intelligence
 ### General introduction
 
@@ -56,6 +58,8 @@ Model Weight : 246.06 MB with 31,037,633 parameters.
 
 <!-- ![Output of the model](results/v1_result.png) -->
 
+The V2 is a homemade version of the U-Net. It is fully connected and has 4 convolutional layers up and down. Fully connected means that there are also a Multi Layer Perceptron (MLP) at the Bottom of the U-Net. This MLP is composed of 3 linear layers.
+
 Speed : 1sec/iteration on google Colab.<br>
 Precision : Between 3 and 4 pixels in mean euclidian distance.<br>
 Model Weight : 246.06 MB with 31,037,633 parameters.
@@ -67,10 +71,28 @@ The V1 is working but not in real-time.
 The V1 is light enough on a desk computer.
 
 ### RESNET
+
+
+#### Model
 A ResNet is a similar to a convolutional network but it also includes residual layers. This means that it includes the result a previous layer. This allows to avoir gradient vanishing or exploding.
 The code of the ResNet is [here](resnet_version/Ball_tracking_resnet18.ipynb).
+#### Training
+
+The loss function is the BSEWithLogits.
+
+The training is done on 7500 images and the validation on 2 500 images.
+The training is done on 300 epochs with a batch size of 64, 128 or 256.
+
+#### Results
+
+The ResNet18 is a ResNet with 18 layers. It is a homemade version of the ResNet18 from Pytorch.
+This version only includes 12 convolutions. The 18 layers model was to heavy to train.
+
+The ResNet as it is is not accurate at all, it is not usable for now.
+Convolutions are also heavy which slows down the training.
 
 ## Documentation
 
 All the project is explained on the [project_report.pdf](project_report.pdf) file.
+
 The whole logging of the AI has been down using Wandb : [https://wandb.ai/sn00wden/simplest_IA](https://wandb.ai/sn00wden/simplest_IA)
