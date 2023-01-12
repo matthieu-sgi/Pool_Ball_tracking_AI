@@ -20,7 +20,7 @@ The logging is done on WanDB tool.
 
 ### U-NET
 There are 3 versions of the u-net model :
-- [Ball_tracking_u-net_V1.ipynb](u_net_version/Ball_tracking_u-net_V1.ipynb), is a classical U-Net with 4 down and 4 up. This one has been down following the github repository [github is down](githubisdown) 
+- [Ball_tracking_u-net_V1.ipynb](u_net_version/Ball_tracking_u-net_V1.ipynb), is a classical U-Net with 4 down and 4 up. This one has been down following the github repository [Pytorch-UNet](https://github.com/milesial/Pytorch-UNet) 
  - [Ball_tracking_u-net_V2.ipynb](u_net_version/Ball_tracking_u-net_V2.ipynb), is a fully connected U-Net with 4 convolutional layers up and down. Homemade version.
 Before going up, there is a MLP with 3 linear layers.
  - [Ball_tracking_u-net_V3.ipynb](u_net_version/Ball_tracking_u-net_V3.ipynb), is a fully connected U-Net with 4 convolutional layers up and down. The same as V2 but without the MLP
@@ -36,7 +36,8 @@ The training is done on 300 epochs with a batch size of 64, 128 or 256.
 
 
 #### Results
-#### V1
+##### V1 : 
+
 Results of the V1 AI :
 
 ![Output of the model](results/v1_result.png)
@@ -49,6 +50,21 @@ Results of the V1 AI :
 Speed : 1sec/iteration on google Colab.<br>
 Precision : Between 3 and 4 pixels in mean euclidian distance.<br>
 Model Weight : 246.06 MB with 31,037,633 parameters.
+<!-- Number of epochs : 2000 -->
+
+##### V2 :
+
+<!-- ![Output of the model](results/v1_result.png) -->
+
+Speed : 1sec/iteration on google Colab.<br>
+Precision : Between 3 and 4 pixels in mean euclidian distance.<br>
+Model Weight : 246.06 MB with 31,037,633 parameters.
+
+
+#### Conclusion on U-Net
+
+The V1 is working but not in real-time.
+The V
 
 ### RESNET
 ## Documentation
