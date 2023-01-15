@@ -50,25 +50,36 @@ Results of the V1 AI :
 4. The target
 
 Speed : 1sec/iteration on google Colab.<br>
-Precision : Between 3 and 4 pixels in mean euclidian distance.<br>
+Accuracy : Between 3 and 4 pixels in mean euclidian distance.<br>
 Model Weight : 246.06 MB with 31,037,633 parameters.
-<!-- Number of epochs : 2000 -->
 
 ##### V2 :
 
-<!-- ![Output of the model](results/v1_result.png) -->
 
 The V2 is a homemade version of the U-Net. It is fully connected and has 4 convolutional layers up and down. Fully connected means that there are also a Multi Layer Perceptron (MLP) at the Bottom of the U-Net. This MLP is composed of 3 linear layers.
 
-Speed : 1sec/iteration on google Colab.<br>
-Precision : Between 3 and 4 pixels in mean euclidian distance.<br>
-Model Weight : 246.06 MB with 31,037,633 parameters.
+Speed : Haven't been able to correctly test it.<br>
+Accuracy : Not accurate enough<br>
+Model Weight : 20.33 MB with 1,182,017 parameters.
+
+##### V3
+
+The V3 is the same as the V2 without the MLP at the bottom.
+
+Speed : Haven't been able to correctly test it.<br>
+Accuracy : Not accurate enough<br>
+Model Weight : 16.12 MB with 112,705 parameters.
 
 
 #### Conclusion on U-Net
 
 The V1 is working but not in real-time.
 The V1 is light enough on a desk computer.
+
+The V2 and V3 are not accurate enough to be used.
+
+U-Net might be one of the best model for this kind of problem but hardly working in real-time.
+
 
 ### RESNET
 
@@ -90,6 +101,14 @@ This version only includes 12 convolutions. The 18 layers model was to heavy to 
 
 The ResNet as it is is not accurate at all, it is not usable for now.
 Convolutions are also heavy which slows down the training.
+
+#### Conclusion on ResNet
+
+The ResNet is not usable for now. It is not accurate enough and is too heavy to be used in real-time.
+
+## Conclusion
+
+Between U-Net and ResNet, the U-Net is better but the one I built is too heavy. The ResNet is not accurate enough and is too heavy to be used in real-time. Work has to be done on the U-Net to make it usable.
 
 ## Documentation
 
