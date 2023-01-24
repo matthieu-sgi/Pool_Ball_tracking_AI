@@ -55,6 +55,7 @@ Model Weight : 246.06 MB with 31,037,633 parameters.
 
 ##### V2 :
 
+![Output of the model](results/v2_result.png)
 
 The V2 is a homemade version of the U-Net. It is fully connected and has 4 convolutional layers up and down. Fully connected means that there are also a Multi Layer Perceptron (MLP) at the Bottom of the U-Net. This MLP is composed of 3 linear layers.
 
@@ -63,6 +64,8 @@ Accuracy : Not accurate enough<br>
 Model Weight : 20.33 MB with 1,182,017 parameters.
 
 ##### V3
+
+![Output of the model](results/v3_result.png)
 
 The V3 is the same as the V2 without the MLP at the bottom.
 
@@ -95,6 +98,7 @@ The training is done on 7500 images and the validation on 2 500 images.
 The training is done on 300 epochs with a batch size of 64, 128 or 256.
 
 #### Results
+![Output of the model](results/resnet_result.png)
 
 The ResNet18 is a ResNet with 18 layers. It is a homemade version of the ResNet18 from Pytorch.
 This version only includes 12 convolutions. The 18 layers model was to heavy to train.
